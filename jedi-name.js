@@ -5,3 +5,25 @@ function jediName (firstName, lastName){
 }
 
 console.log(jediName('ethan', 'frigon'));
+
+function beyond(num) {
+ 
+  if (num === Infinity) {
+    return('And beyond');
+  }
+
+  if (num % 2 === 0) {
+    return('To inifinity');
+  }
+
+  if (num %2 !== 0) {
+    return('To negative infinity');
+  }
+
+  if (num === 0) {
+    return('Staying home')
+  }
+
+}
+
+console.log(beyond(Infinity)); 

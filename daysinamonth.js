@@ -16,29 +16,18 @@ switch(string) {
     case 'November':
     result = `${string} has 30 days`;
         break;
-        return result;
-}
-
-// if (typeof result === undefined) {
-//     switch(leapYear) {
-//         case 'February' && true:
-//         result = `${string} has 29 days`;
-//             break;
-//         case 'February' && false:
-//         result = `${string} has 28 days`;
-//             break;    
-//     }
-// }
-
-switch(leapYear) {
-    case 'February' && true:
-    result = `${string} has 29 days`;
-        break;
-    case 'February' && false:
-    result = `${string} has 28 days`;
-        break;    
 }
 return result;
+
+switch(leapYear) {
+    case 'February':
+    result = `${string} has 29 days`;
+        break;
+    case 'February':
+    result = `${string} has 28 days`;
+        break;    
+        return result;
+}
 }
 
-console.log(monthDays('March', true));
+console.log(monthDays('February', true));
